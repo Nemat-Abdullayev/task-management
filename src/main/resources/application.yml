@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: a2z-advisors
+  jackson:
+    mapper:
+      accept_case_insensitive_properties: true
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    dialect: org.hibernate.dialect.PostgreSQLDialect

@@ -1,0 +1,217 @@
+2021-03-01 14:34:13,297 INFO  [restartedMain] az.advisors.AdvisorsApplication : Starting AdvisorsApplication using Java 11.0.10 on DESKTOP-E7JMN9A with PID 5856 (C:\Users\hp\a2zAdvisors\build\classes\java\main started by hp in C:\Users\hp\a2zAdvisors)
+2021-03-01 14:34:13,301 INFO  [restartedMain] az.advisors.AdvisorsApplication : The following profiles are active: dev
+2021-03-01 14:34:13,375 INFO  [restartedMain] org.springframework.boot.devtools.restart.ChangeableUrls : The Class-Path manifest attribute in C:\Users\hp\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\19.8.0.0\df9cff9b91c47d06b9a0482d566ee2d83a03e586\ojdbc8-19.8.0.0.jar referenced one or more files that do not exist: file:/C:/Users/hp/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/19.8.0.0/df9cff9b91c47d06b9a0482d566ee2d83a03e586/oraclepki.jar
+2021-03-01 14:34:13,376 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-01 14:34:13,376 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-01 14:34:14,597 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 14:34:14,676 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 4 JPA repository interfaces.
+2021-03-01 14:34:15,489 INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4de49c9c' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-01 14:34:15,496 INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-01 14:34:15,852 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+2021-03-01 14:34:15,863 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-03-01 14:34:15,864 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-01 14:34:16,006 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-03-01 14:34:16,006 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2629 ms
+2021-03-01 14:34:16,552 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-03-01 14:34:16,903 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-03-01 14:34:18,616 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 14:34:19,161 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2021-03-01 14:34:19,223 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 14:34:19,792 INFO  [restartedMain] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-01 14:34:19,969 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Will secure Mvc [pattern='/**', OPTIONS] with []
+2021-03-01 14:34:19,970 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Will secure Mvc [pattern='/swagger-ui.html/**'] with []
+2021-03-01 14:34:19,970 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Will secure Mvc [pattern='/configuration/**'] with []
+2021-03-01 14:34:19,970 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Will secure Mvc [pattern='/swagger-resources/**'] with []
+2021-03-01 14:34:19,970 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Will secure Mvc [pattern='/v2/api-docs'] with []
+2021-03-01 14:34:19,970 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Will secure Mvc [pattern='/webjars/**'] with []
+2021-03-01 14:34:20,013 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@265f42da, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c81b24e, org.springframework.security.web.header.HeaderWriterFilter@5dba0c5d, org.springframework.security.web.authentication.logout.LogoutFilter@47b18ce0, az.advisors.security.JwtFilter@cec70e0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4808f493, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5eea54c8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e4430ab, org.springframework.security.web.session.SessionManagementFilter@4b7aa821, org.springframework.security.web.access.ExceptionTranslationFilter@427fcd72, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2b0a7d3f]
+2021-03-01 14:34:20,163 INFO  [restartedMain] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 14:34:20,376 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-01 14:34:20,378 INFO  [restartedMain] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-03-01 14:34:20,395 INFO  [restartedMain] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-03-01 14:34:20,425 INFO  [restartedMain] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-03-01 14:34:20,666 INFO  [restartedMain] az.advisors.AdvisorsApplication : Started AdvisorsApplication in 7.906 seconds (JVM running for 9.218)
+2021-03-01 14:34:37,071 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-01 14:34:37,162 ERROR [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2021-03-01T14:23:25Z. Current time: 2021-03-01T14:34:37Z, a difference of 672149 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at az.advisors.security.JwtTokenUtil.getAllClaimsFromToken(JwtTokenUtil.java:51)
+	at az.advisors.security.JwtTokenUtil.getClaimFromToken(JwtTokenUtil.java:43)
+	at az.advisors.security.JwtTokenUtil.getUserNameFromToken(JwtTokenUtil.java:39)
+	at az.advisors.security.JwtFilter.doFilterInternal(JwtFilter.java:32)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-03-01 14:44:28,779 INFO  [restartedMain] az.advisors.AdvisorsApplication : Starting AdvisorsApplication using Java 11.0.10 on DESKTOP-E7JMN9A with PID 10624 (C:\Users\hp\a2zAdvisors\build\classes\java\main started by hp in C:\Users\hp\a2zAdvisors)
+2021-03-01 14:44:28,785 INFO  [restartedMain] az.advisors.AdvisorsApplication : The following profiles are active: dev
+2021-03-01 14:44:28,923 INFO  [restartedMain] org.springframework.boot.devtools.restart.ChangeableUrls : The Class-Path manifest attribute in C:\Users\hp\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\19.8.0.0\df9cff9b91c47d06b9a0482d566ee2d83a03e586\ojdbc8-19.8.0.0.jar referenced one or more files that do not exist: file:/C:/Users/hp/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/19.8.0.0/df9cff9b91c47d06b9a0482d566ee2d83a03e586/oraclepki.jar
+2021-03-01 14:44:28,927 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-01 14:44:28,928 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-01 14:44:30,589 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 14:44:30,681 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 4 JPA repository interfaces.
+2021-03-01 14:44:31,493 INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3c90ea73' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-01 14:44:31,502 INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-01 14:44:31,932 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+2021-03-01 14:44:31,945 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-03-01 14:44:31,946 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-01 14:44:32,090 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-03-01 14:44:32,090 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3161 ms
+2021-03-01 14:44:32,821 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-03-01 14:44:33,135 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-03-01 14:44:36,191 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 14:44:36,820 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2021-03-01 14:44:36,885 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 14:44:37,567 INFO  [restartedMain] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-01 14:44:37,749 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Will secure Mvc [pattern='/**', OPTIONS] with []
+2021-03-01 14:44:37,749 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Will secure Mvc [pattern='/swagger-ui.html/**'] with []
+2021-03-01 14:44:37,749 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Will secure Mvc [pattern='/configuration/**'] with []
+2021-03-01 14:44:37,749 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Will secure Mvc [pattern='/swagger-resources/**'] with []
+2021-03-01 14:44:37,750 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Will secure Mvc [pattern='/v2/api-docs'] with []
+2021-03-01 14:44:37,750 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Will secure Mvc [pattern='/webjars/**'] with []
+2021-03-01 14:44:37,807 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@26bf9006, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b3c9f8e, org.springframework.security.web.header.HeaderWriterFilter@2f869fe0, org.springframework.security.web.authentication.logout.LogoutFilter@7a8cab6a, az.advisors.security.JwtFilter@75da6ab4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15d47073, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b35193f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@429adb66, org.springframework.security.web.session.SessionManagementFilter@635d69e9, org.springframework.security.web.access.ExceptionTranslationFilter@3cdda5b8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4274c6b9]
+2021-03-01 14:44:38,009 INFO  [restartedMain] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 14:44:38,274 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-01 14:44:38,276 INFO  [restartedMain] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-03-01 14:44:38,296 INFO  [restartedMain] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-03-01 14:44:38,328 INFO  [restartedMain] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-03-01 14:44:38,599 INFO  [restartedMain] az.advisors.AdvisorsApplication : Started AdvisorsApplication in 11.004 seconds (JVM running for 14.059)
+2021-03-01 14:44:52,944 INFO  [restartedMain] az.advisors.AdvisorsApplication : Starting AdvisorsApplication using Java 11.0.10 on DESKTOP-E7JMN9A with PID 3672 (C:\Users\hp\a2zAdvisors\build\classes\java\main started by hp in C:\Users\hp\a2zAdvisors)
+2021-03-01 14:44:52,950 INFO  [restartedMain] az.advisors.AdvisorsApplication : The following profiles are active: dev
+2021-03-01 14:44:53,133 INFO  [restartedMain] org.springframework.boot.devtools.restart.ChangeableUrls : The Class-Path manifest attribute in C:\Users\hp\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\19.8.0.0\df9cff9b91c47d06b9a0482d566ee2d83a03e586\ojdbc8-19.8.0.0.jar referenced one or more files that do not exist: file:/C:/Users/hp/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/19.8.0.0/df9cff9b91c47d06b9a0482d566ee2d83a03e586/oraclepki.jar
+2021-03-01 14:44:53,134 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-01 14:44:53,135 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-01 14:44:55,390 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-01 14:44:55,485 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 4 JPA repository interfaces.
+2021-03-01 14:44:56,400 INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3413d1d' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-01 14:44:56,406 INFO  [restartedMain] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-01 14:44:56,795 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http)
+2021-03-01 14:44:56,806 INFO  [restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-03-01 14:44:56,807 INFO  [restartedMain] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-01 14:44:56,963 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-03-01 14:44:56,963 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3827 ms
+2021-03-01 14:44:57,586 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-03-01 14:44:57,968 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-03-01 14:44:59,966 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-01 14:45:00,565 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2021-03-01 14:45:00,653 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-01 14:45:01,301 INFO  [restartedMain] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-01 14:45:01,470 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Will secure Mvc [pattern='/**', OPTIONS] with []
+2021-03-01 14:45:01,470 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Will secure Mvc [pattern='/swagger-ui.html/**'] with []
+2021-03-01 14:45:01,471 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Will secure Mvc [pattern='/configuration/**'] with []
+2021-03-01 14:45:01,471 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Will secure Mvc [pattern='/swagger-resources/**'] with []
+2021-03-01 14:45:01,471 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Will secure Mvc [pattern='/v2/api-docs'] with []
+2021-03-01 14:45:01,471 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Will secure Mvc [pattern='/webjars/**'] with []
+2021-03-01 14:45:01,523 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@57734eaf, org.springframework.security.web.context.SecurityContextPersistenceFilter@302c1bfe, org.springframework.security.web.header.HeaderWriterFilter@b882e5, org.springframework.security.web.authentication.logout.LogoutFilter@775d8647, az.advisors.security.JwtFilter@775cc822, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e8d6f87, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47432efb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@51e7aabe, org.springframework.security.web.session.SessionManagementFilter@3068bc19, org.springframework.security.web.access.ExceptionTranslationFilter@3b491d49, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@35b66483]
+2021-03-01 14:45:01,696 INFO  [restartedMain] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 14:45:01,952 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-01 14:45:01,954 INFO  [restartedMain] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-03-01 14:45:01,973 INFO  [restartedMain] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-03-01 14:45:02,003 INFO  [restartedMain] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-03-01 14:45:02,288 INFO  [restartedMain] az.advisors.AdvisorsApplication : Started AdvisorsApplication in 10.326 seconds (JVM running for 12.189)
+2021-03-01 14:45:08,217 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-01 14:45:08,352 ERROR [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2021-03-01T14:23:25Z. Current time: 2021-03-01T14:45:08Z, a difference of 1303333 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at az.advisors.security.JwtTokenUtil.getAllClaimsFromToken(JwtTokenUtil.java:51)
+	at az.advisors.security.JwtTokenUtil.getClaimFromToken(JwtTokenUtil.java:43)
+	at az.advisors.security.JwtTokenUtil.getUserNameFromToken(JwtTokenUtil.java:39)
+	at az.advisors.security.JwtFilter.doFilterInternal(JwtFilter.java:32)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)

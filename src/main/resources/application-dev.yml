@@ -1,0 +1,47 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:1521/postgres
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: admin
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.format_sql: true
+      temp:
+        use_jdbc_metadata_defaults: false
+        jdbc:
+          lob:
+            non_contextual_creation: true
+
+
+
+
+jwt:
+  secret: a2zAdvisorsSecreet
+  expiration: 900_000
+  header: Authorization
+  route:
+    authentication:
+      path: authenticate
+
+az:
+  root:
+    user: user
+    task: task
+
+
+logging:
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    org.springframework.web: ERROR
+    com.howtodoinjava: INFO
+    org.hibernate: ERROR
+  file:
+    name: logs/application-debug.log
