@@ -23,7 +23,6 @@ public abstract class TaskMapper {
             @Mapping(target = "assignedUserFullName", expression = "java(getFullNameOfAssignedByUser(task.getAssignedBy().getName(),task.getAssignedBy().getSurname()))"),
             @Mapping(target = "rank", source = "task.rank")
     })
-
     public abstract TaskResponse mapEntityToView(Task task);
 
     @Mappings({
@@ -33,7 +32,6 @@ public abstract class TaskMapper {
             @Mapping(target = "rank", source = "task.rank"),
             @Mapping(target = "statusName", expression = "java(getRoleName(task.getStatus()))"),
     })
-
 
     public abstract TaskResponseWithStatus mapToView(Task task);
 

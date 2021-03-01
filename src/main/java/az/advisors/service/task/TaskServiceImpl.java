@@ -13,6 +13,7 @@ import az.advisors.repository.status.StatusRepository;
 import az.advisors.repository.task.TaskRepository;
 import az.advisors.security.JwtTokenUtil;
 import az.advisors.service.user.UserService;
+import az.advisors.util.exception.UserNotFoundException;
 import lombok.extern.java.Log;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -129,42 +130,36 @@ public class TaskServiceImpl implements TaskService {
 
     @Override
     @Transactional
-    public ResponseEntity<?> update(Long taskId, HttpServletRequest request) {
-        try {
-            LOGGER.info("Enter input taskId=" + taskId);
-            String[] data = getUserDataFromHttpServletRequest(request).split("#");
-            User user = userService.findByUsername(data[0]);
-            if (Objects.nonNull(user)) {
-                if (user.getUserRole().getRoleName().equals(RoleName.STUDENT)) {
-                    List<Task> tasks = taskRepository.getAllByAssignedTo(user);
-                    Optional<Task> matchingObject = tasks.stream().
-                            filter(t -> t.getId().equals(taskId)).
-                            findFirst();
-                    Task task = matchingObject.get();
-                    if (LocalDate.now().isBefore(task.getDeadLine())) {
-                        LOGGER.debug("Dead line of task is after current date");
-                        Status status = statusRepository.findByStatusName(StatusName.SUCCESS);
-                        task.setStatus(status);
-                    } else {
-                        LOGGER.debug("Dead line of task is before current date");
-                        Status status = statusRepository.findByStatusName(StatusName.MISS);
-                        task.setRank(-1);
-                        task.setStatus(status);
-                    }
-                    taskRepository.save(task);
-                    return ResponseEntity.ok("OK");
+    public ResponseEntity<?> update(Long taskId, HttpServletRequest request) throws UserNotFoundException {
+        LOGGER.info("Enter input taskId=" + taskId);
+        String[] data = getUserDataFromHttpServletRequest(request).split("#");
+        User user = userService.findByUsername(data[0]);
+        if (Objects.nonNull(user)) {
+            if (user.getUserRole().getRoleName().equals(RoleName.STUDENT)) {
+                List<Task> tasks = taskRepository.getAllByAssignedTo(user);
+                Optional<Task> matchingObject = tasks.stream().
+                        filter(t -> t.getId().equals(taskId)).
+                        findFirst();
+                Task task = matchingObject.get();
+                if (LocalDate.now().isBefore(task.getDeadLine())) {
+                    LOGGER.debug("Dead line of task is after current date");
+                    Status status = statusRepository.findByStatusName(StatusName.SUCCESS);
+                    task.setStatus(status);
                 } else {
-                    LOGGER.debug("you user role is not STUDENT ==>[" + user.getUserRole().getRoleName() + "]");
-                    return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("you user role is not STUDENT!");
+                    LOGGER.debug("Dead line of task is before current date");
+                    Status status = statusRepository.findByStatusName(StatusName.MISS);
+                    task.setRank(-1);
+                    task.setStatus(status);
                 }
+                taskRepository.save(task);
+                return ResponseEntity.ok("OK");
             } else {
-                LOGGER.debug("user not found by username==> user is null");
-                return ResponseEntity.status(HttpStatus.NOT_FOUND).body("user not found by username");
+                LOGGER.debug("you user role is not STUDENT ==>[" + user.getUserRole().getRoleName() + "]");
+                return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("you user role is not STUDENT!");
             }
-        } catch (Exception e) {
-            LOGGER.warn("An error while update status of task==>[" + e.getMessage() + "]");
-            e.printStackTrace();
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("an error while update task's status");
+        } else {
+            LOGGER.debug("user not found by username==> user is null");
+            throw new UserNotFoundException("user not found by username");
         }
 
     }

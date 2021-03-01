@@ -41,7 +41,5 @@ logging:
     file: "%d %-5level [%thread] %logger : %msg%n"
   level:
     org.springframework.web: ERROR
-    com.howtodoinjava: INFO
     org.hibernate: ERROR
-  file:
-    name: logs/application-debug.log
+  file: logs/application-debug.log
